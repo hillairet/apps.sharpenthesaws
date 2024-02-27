@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    "one_country_a_day.apps.OneCountryADayConfig",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
