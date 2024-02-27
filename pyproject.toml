@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "apps.sharpenthesaws"
+version = "0.1.0"
+description = "A collection of Django apps"
+authors = ["Ant <anthony.hillairet@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+openai = "^1.11.0"
+django = "^5.0.2"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.8.0"
+ruff = "^0.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+# ======== mypy ========
+# https://mypy.readthedocs.io/en/stable/config_file.html#using-a-pyproject-toml-file
+[tool.mypy]
+ignore_missing_imports = true
+show_error_codes = true
+check_untyped_defs = true
