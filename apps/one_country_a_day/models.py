@@ -12,6 +12,7 @@ class Country(models.Model):
 
 class CountryData(models.Model):
     country = models.ForeignKey(Country, on_delete=models.CASCADE)
+    created_at = models.DateTimeField(auto_now_add=True)
     history = models.TextField()
     flag = models.TextField()
     cuisine = models.TextField()
